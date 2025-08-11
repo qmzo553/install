@@ -10,7 +10,7 @@ controller:
   service:
     type: ClusterIP
     externalIPs:
-      - 192.168.56.30
+      - 172.29.121.149
 
   # Nginx 설치시 ingressClass 생성
   ingressClassResource:
