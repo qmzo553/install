@@ -10,7 +10,7 @@ controller:
   service:
     type: ClusterIP
     externalIPs:
-      - 192.168.65.3
+      - 172.29.121.149
 
   # Nginx 설치시 ingressClass 생성
   ingressClassResource:
@@ -36,7 +36,7 @@ controller:
 
   # Master 노드에 스케줄링 되도록 tolerations 설정
   nodeSelector:
-    kubernetes.io/hostname: docker-desktop
+    kubernetes.io/hostname: k8s-master
 
   tolerations:
     - key: "node-role.kubernetes.io/control-plane"
