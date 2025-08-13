@@ -2,7 +2,7 @@ metrics-server:
   enabled: true
 
   nodeSelector:
-    kubernetes.io/hostname: DESKTOP-DLOPF19
+    kubernetes.io/hostname: desktop-dlopf19
   tolerations:
     - key: "node-role.kubernetes.io/control-plane"
       operator: "Exists"
@@ -26,7 +26,7 @@ kong:
       nodePort: 30000
 
   nodeSelector:
-    kubernetes.io/hostname: DESKTOP-DLOPF19
+    kubernetes.io/hostname: desktop-dlopf19
   tolerations:
     - key: "node-role.kubernetes.io/control-plane"
       operator: "Exists"
@@ -35,7 +35,7 @@ kong:
 app:
   scheduling:
     nodeSelector:
-      kubernetes.io/hostname: DESKTOP-DLOPF19
+      kubernetes.io/hostname: desktop-dlopf19
   tolerations:
     - key: "node-role.kubernetes.io/control-plane"
       operator: "Exists"
