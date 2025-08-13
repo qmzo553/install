@@ -36,7 +36,7 @@ controller:
 
   # Master 노드에 스케줄링 되도록 tolerations 설정
   nodeSelector:
-    kubernetes.io/hostname: k8s-master
+    kubernetes.io/hostname: desktop-dlopf19
 
   tolerations:
     - key: "node-role.kubernetes.io/control-plane"
